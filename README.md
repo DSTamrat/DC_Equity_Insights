@@ -1,4 +1,5 @@
 📘 DC Equity Insights – RAG Policy Dashboard
+
 <p align="center">
 <img src="assets/dc_map.png" width="300">
 </p>
@@ -8,6 +9,7 @@
 </p>
 
 🏷️ Badges
+
 <p align="center">
 
 <img src="https://img.shields.io/badge/Python-3.10+-blue?style=for-the-badge">
@@ -71,34 +73,24 @@ Modern dark‑navy theme
 
 Clean, government‑style layout
 
+## 🏗️ System Architecture
+
+<p align="center">
+  <img src="assets/architecture.png" width="600">
+</p>
+
 🗂️ Project Structure
 Code
 DC_Equity_Insights/
 │
 ├── backend/
-│   ├── main.py
-│   ├── data_pipeline.py
-│   └── venv/ (ignored)
+│ ├── main.py
+│ ├── data_pipeline.py
+│ └── venv/ (ignored)
 │
 ├── assets/
-│   └── dc_map.png
+│ └── dc_map.png
 │
 ├── app.py
 ├── README.md
 └── .gitignore
-
-## 🏗️ System Architecture
-
-```mermaid
-flowchart TD
-    A[User] -->|Question| B[Streamlit Frontend]
-
-    B -->|POST /ask| C[FastAPI Backend]
-
-    C --> D[Embedding Model<br>Vector Store]
-    C --> E[Policy Reasoning Engine]
-
-    D --> C
-    E --> C
-
-    C -->|Answer + Metrics + Sources| B
