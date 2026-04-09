@@ -1,0 +1,23 @@
+# RMarkdown Report 
+This report summarizes findings, methods, and policy implications. 
+---
+title: "DC Equity Insights – Equity Metrics Report"
+author: "Tamrat Workineh"
+output:
+  html_document:
+    toc: true
+    theme: cosmo
+---
+
+This report summarizes findings, methods, and policy implications.
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(readr)
+library(ggplot2)
+library(broom)
+
+base_dir <- normalizePath(file.path("..", "..", ".."), winslash = "/")
+data_processed <- file.path(base_dir, "data_processed", "dc_combined.csv")
+df <- read_csv(data_processed, show_col_types = FALSE)
+

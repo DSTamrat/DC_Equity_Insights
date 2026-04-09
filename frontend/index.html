@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DC Equity Insights – AI Assistant</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Language detection library -->
+    <script src="https://unpkg.com/franc-min"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Dark mode toggle -->
+    <button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+    <!-- Sidebar -->
+    <button id="toggle-sidebar">☰</button>
+    <div id="sidebar">
+      <h3>Chat History</h3>
+      <div id="chat-history" class="chat-box"></div>
+    </div>
+
+    <!-- Main container -->
+    <main class="container">
+      <section class="panel">
+        <h1>DC Equity Insights</h1>
+        <p>
+          Explore transportation, housing, and public safety equity with an AI
+          assistant.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>RAG Q&A</h2>
+
+        <!-- Input row -->
+        <div class="input-row">
+          <input id="question" type="text" placeholder="Ask a question..." />
+          <button id="ask-btn">Ask</button>
+          <button id="mic-btn">🎤</button>
+
+          <!-- Waveform -->
+          <div id="waveform" class="waveform hidden">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+        </div>
+
+        <!-- Suggested questions -->
+        <div id="suggested-questions">
+          <h4>Suggested Questions</h4>
+          <ul>
+            <li class="suggestion">What is the equity score?</li>
+            <li class="suggestion">How do you calculate transit access?</li>
+            <li class="suggestion">Which datasets are used?</li>
+            <li class="suggestion">What are the limitations?</li>
+          </ul>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-row">
+          <button id="clear-chat-btn">Clear Chat</button>
+          <button id="export-chat-btn">Export Chat</button>
+        </div>
+
+        <!-- Inline chat -->
+        <div id="chat-history-inline" class="chat-box"></div>
+
+        <!-- Answer panel -->
+        <div id="answer" class="answer-panel"></div>
+      </section>
+    </main>
+
+    <!-- Scroll to bottom -->
+    <button id="scroll-bottom">⬇️</button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
