@@ -1,0 +1,28 @@
+
+This diagram shows:
+
+- User → Streamlit UI  
+- Streamlit → FastAPI `/ask`  
+- FastAPI → Embeddings + RAG retrieval  
+- FastAPI → Policy reasoning  
+- Response → Streamlit  
+
+It’s clean, modern, and GitHub‑friendly.
+
+---
+
+# 🎨 **Optional: ASCII version (if you want it in code blocks)**
+
+```text
+User
+  │
+  ▼
+Streamlit UI
+  │  POST /ask
+  ▼
+FastAPI Backend
+  ├── Embedding Model / Vector Store
+  └── Policy Reasoning Engine
+  │
+  ▼
+Answer + Metrics + Sources
