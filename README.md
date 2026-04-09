@@ -1,4 +1,6 @@
-📘 DC Equity Insights – RAG Policy Dashboard
+<p align="center"> <h1>
+  <strong>DC Equity Insights – RAG Policy Dashboard</strong> </h1>
+</p>
 
 <p align="center">
 <img src="assets/dc_map.png" width="300">
