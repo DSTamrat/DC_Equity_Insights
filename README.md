@@ -10,7 +10,7 @@
 <strong>A Retrieval-Augmented Generation (RAG) dashboard for analyzing equity, transit access, housing stability, public safety, education, health, and public‑sector performance across Washington, DC.</strong>
 </p>
 
-🏷️ Badges
+ Badges
 
 <p align="center">
 
@@ -23,7 +23,7 @@
 
 </p>
 
-📊 Overview
+Overview
 DC Equity Insights is an interactive RAG-powered policy dashboard that synthesizes structured datasets and natural‑language reasoning to answer questions about:
 
 Equity disparities across wards
@@ -46,8 +46,8 @@ Public‑sector performance
 
 The system combines FastAPI, semantic retrieval, and a Streamlit UI to deliver transparent, explainable insights.
 
-🧠 Key Features
-🔹 RAG Backend (FastAPI)
+ Key Features
+ RAG Backend (FastAPI)
 /ask endpoint for policy‑style reasoning
 
 /health endpoint for diagnostics
@@ -62,7 +62,7 @@ sources
 
 limitations
 
-🔹 Streamlit Dashboard
+ Streamlit Dashboard
 Centered DC map banner
 
 Dropdown menu with representative questions
@@ -75,13 +75,13 @@ Modern dark‑navy theme
 
 Clean, government‑style layout
 
-## 🏗️ System Architecture
+##  System Architecture
 
 <p align="center">
   <img src="assets/architecture.png" width="600">
 </p>
 
-🗂️ Project Structure
+Project Structure
 Code
 DC_Equity_Insights/
 │
